@@ -1107,11 +1107,12 @@ footer {
   margin-left: auto;
   position: relative;
   padding-bottom: 100px;
+  max-width: 1550px;
 }
 
 .why_a_class .wac_left {
   display: flex;
-  width: 100%;
+  width: 47.71%;
   height: 100%;
   flex-direction: column;
   align-items: stretch;
@@ -1119,7 +1120,6 @@ footer {
   color: #fff;
   text-align: left;
   justify-content: flex-start;
-  width: 47.71%;
 }
 
 .why_a_class .wac_left h3 {
@@ -1232,6 +1232,18 @@ footer {
   .mission_vision.director {
     padding-top: 50px;
   }
+  .wac_container {
+    flex-direction: column-reverse;
+  }
+  .wac_container > div {
+    width: 100%!important;
+  }
+  .why_a_class .wac_left h3 {
+    font-size: 30px;
+  }
+  .wac_right h2 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .banner_content {
@@ -1275,6 +1287,15 @@ footer {
   }
   .banner-section2 {
     min-height: 250px;
+  }
+  .mission_vision {
+    padding-bottom: 40px;
+  }
+  .wac_left, .wac_right {
+    padding-bottom: 50px;
+  }
+  .wac_container {
+    padding-bottom: 50px;
   }
 }
 @media only screen and (max-width: 399px) {
