@@ -302,7 +302,7 @@ header ul li.dropdown::before {
   color: #000;
   position: absolute;
   right: 12px;
-  bottom: 4px;
+  top: 10px;
 }
 
 header li.nav-item {
@@ -950,7 +950,9 @@ footer {
 .footer_column {
   padding-right: 75px;
 }
-
+.footer_column form {
+  margin-top: 50px;
+}
 .footer_column h3 {
   color: var(--e-global-color-accent);
   font-family: "Plus Jakarta Sans", Cinzel serif;
@@ -1203,10 +1205,32 @@ footer {
     margin: 20px 0 20px 0;
     padding: 10px 0;
   }
+  .little_about_section {
+    padding-bottom: 0;
+  }
+  .os_cards_container {
+    padding: 50px 0px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .footer_column {
     padding-right: 15px;
+  }
+  .os_cards_container {
+    padding: 40px 0px 0 0;
+  }
+  section.our_services {
+    padding-bottom: 50px;
+  }
+  .mv_left {
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  .mv_left img {
+    height: 400px;
+  }
+  .mission_vision.director {
+    padding-top: 50px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1234,6 +1258,11 @@ footer {
   .footer_bottom {
     padding-right: 20px;
     padding-left: 20px;
+    margin-top: 40px;
+  }
+  .banner-section2 {
+    text-align: center;
+    min-height: 330px;
   }
 }
 
@@ -1243,6 +1272,9 @@ footer {
   }
   .para {
     font-size: 16px;
+  }
+  .banner-section2 {
+    min-height: 250px;
   }
 }
 @media only screen and (max-width: 399px) {
