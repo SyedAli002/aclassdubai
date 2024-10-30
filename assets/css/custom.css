@@ -106,9 +106,9 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type="number"] {
+/* input[type="number"] {
   -moz-appearance: textfield;
-}
+} */
 
 html {
   overflow-x: hidden;
@@ -285,10 +285,6 @@ header {
   border: none;
 }
 
-.navbar-toggler-icon {
-  /* filter: invert(1); */
-}
-
 .navbar-brand img {
   animation: infiniteScale 2s infinite;
 }
@@ -327,9 +323,9 @@ header ul li.dropdown a::after {
   top: 10px;
 }
 
-header li.nav-item {
-  /* padding: 0 20px 0 0px; */
-}
+/* header li.nav-item {
+  padding: 0 20px 0 0px;
+} */
 
 header li.nav-item a {
   padding-left: 10px;
@@ -1089,6 +1085,14 @@ footer {
   background-position: bottom;
   background-attachment: fixed;
 }
+.banner-section2.school_bus {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/school_bus_img6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
 .banner-section2 {
   min-height: 400px;
   display: flex;
@@ -1152,7 +1156,10 @@ footer {
 .mv_right p {
   margin-bottom: 20px;
 }
-
+.mission_vision.school_bus .mv_right ul li {
+  list-style-type: disclosure-closed;
+  margin-left: 18px !important;
+}
 /* mission vision */
 
 /* why a class */
@@ -1672,6 +1679,12 @@ section.gallary {
   }
   .menu_desert_img img {
     height: 350px;
+  }
+  section.menu_desert {
+    padding: 50px 0;
+  }
+  section.gallary {
+    padding-bottom: 0;
   }
 }
 @media only screen and (max-width: 576px) {
