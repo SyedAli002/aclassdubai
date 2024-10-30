@@ -51,6 +51,24 @@
       type="text/css"
     />
     <link href="./assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <style>
+      header .navbar li.dropdown .MegaMenu_menu a.active {
+        font-weight: 900;
+      }
+      header .navbar li.dropdown .MegaMenu_menu a.active::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #c9a631;
+        transition: 0.5s;
+      }
+      ul.navbar-nav li a.active:before {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <div class="top-header">
@@ -118,7 +136,7 @@
                       <div class="col-12 col-lg-12 col-md-6">
                         <ul class="">
                           <li>
-                            <a href="director-message.html">
+                            <a class="active" href="director-message.html">
                               Director message
                             </a>
                           </li>
@@ -136,7 +154,13 @@
                       <div class="col-12 col-lg-12 col-md-6">
                         <ul class="">
                           <li>
-                            <a href="coperate-2.html">Corporate</a>
+                            <a class="" href="coperate-2.html">Corporate</a>
+                          </li>
+                          <li>
+                            <a href="desert-safari.html">Desert Safari</a>
+                          </li>
+                          <li>
+                            <a href="coperate-2.html">Desert Safari UAE</a>
                           </li>
                         </ul>
                       </div>
@@ -307,7 +331,7 @@
           <div class="col-12 col-sm-6 col-lg-4">
             <div class="footer_column">
               <h3>NEWSLETTER SIGNUP</h3>
-          
+
               <form action="">
                 <input type="text" placeholder="Enter your email" />
                 <div class="pt-4">

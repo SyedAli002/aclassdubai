@@ -303,30 +303,35 @@ header ul li.nav-item a {
   text-transform: capitalize;
   font-weight: 600;
   position: relative;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  padding-bottom: 0px !important;
+  z-index: 80;
+  padding-bottom: 5px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  gap: 16px;
+}
+header ul li.dropdown a {
+  padding-right: 18px !important;
+  padding-left: 5px !important;
 }
 
-header ul li.dropdown {
-  padding-right: 28px !important;
-}
-
-header ul li.dropdown::before {
+header ul li.dropdown a::after {
   content: "\f078";
   font-family: "Font Awesome 6 Pro";
   font-size: 12px;
   color: #000;
   position: absolute;
-  right: 12px;
+  right: 0;
   top: 10px;
 }
 
 header li.nav-item {
-  padding: 0 20px 0 0px;
+  /* padding: 0 20px 0 0px; */
 }
 
-header ul li.nav-item {
+header li.nav-item a {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -338,7 +343,7 @@ ul.navbar-nav li a:before {
   left: 0;
   height: 2px;
   width: 0;
-  background: #000000;
+  background: #c9a631;
   transition: 0.5s;
 }
 
@@ -408,6 +413,7 @@ header .navbar li.dropdown:hover .MegaMenu_menu {
   border-radius: unset;
   background-color: transparent;
   border: none;
+  z-index: 0;
 }
 .dm_inner {
   background: #fff;
@@ -429,8 +435,8 @@ header .navbar li.dropdown .MegaMenu_menu li {
   font-size: 21px;
 }
 
-header .navbar li.dropdown .MegaMenu_menu a:before {
-  content: unset;
+header .navbar li.dropdown .MegaMenu_menu a:after {
+  content: unset !important;
 }
 
 header .navbar li.dropdown .MegaMenu_menu a {
@@ -448,6 +454,10 @@ header .navbar li.dropdown .MegaMenu_menu a {
   gap: 10px;
   white-space: nowrap;
   font-weight: 500;
+  margin: 0 0 15px !important;
+}
+header .navbar li.dropdown .MegaMenu_menu ul li:last-child a {
+  margin-bottom: 0 !important;
 }
 
 .social_menu_header p {
@@ -671,7 +681,12 @@ section.banner-section {
   margin: 20px 20px 20px 20px;
   padding: 10px;
 }
-
+.little_about_section.desert .las_left {
+  margin-left: 10px;
+}
+.little_about_section.desert {
+  padding-top: 100px;
+}
 .little_about_section {
   padding: 50px 0 100px;
 }
@@ -1055,9 +1070,25 @@ footer {
     url(../images/about.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-attachment: fixed;
 }
-
+.banner-section2.coperate {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/coperate_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.banner-section2.desert_safari {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/desert-safari_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
 .banner-section2 {
   min-height: 400px;
   display: flex;
@@ -1280,6 +1311,136 @@ footer {
   font-weight: 400;
   margin-bottom: 20px;
 }
+.facilities .eael-data-table {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
+}
+.eael-table-align-center table.eael-data-table {
+  margin: 0 auto;
+}
+.eael-data-table {
+  max-width: 100%;
+}
+
+tbody tr td {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-primary);
+  font-family: var(--e-global-typography-text-font-family), Cinzel serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+}
+.eael-data-table thead tr {
+  text-align: left;
+  border: 1px solid;
+}
+.eael-data-table thead tr th {
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", "sans-serif";
+  line-height: 1;
+  color: #fff;
+  border-color: #000;
+  border-width: 2px;
+  border-style: none;
+  background-clip: padding-box;
+}
+.eael-data-table thead tr th {
+  text-align: left;
+}
+
+thead tr th:first-child {
+  border-radius: 0px 0px 0px 0px;
+}
+.data-table-header-text {
+  font-family: var(--e-global-typography-text-font-family), Cinzel serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+}
+
+.eael-data-table tbody tr td {
+  padding: 20px 15px;
+  font-size: 14px;
+  font-family: "Montserrat", "sans-serif";
+  line-height: 1;
+  border-width: 2px;
+  border-style: none;
+  background-clip: padding-box;
+}
+
+tbody tr td {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-primary);
+  font-family: var(--e-global-typography-text-font-family), Cinzel serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+}
+
+tbody > tr:nth-child(2n + 1) td {
+  color: #000000;
+}
+
+tbody .td-content-wrapper {
+  text-align: left;
+}
+tbody .td-content {
+  font-family: var(--e-global-typography-text-font-family), Cinzel serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+}
+.th-mobile-screen {
+  display: none;
+}
+
+.th-mobile-screen {
+  flex-basis: 100px;
+}
+
+.eael-data-table tbody tr td {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-primary);
+  font-family: var(--e-global-typography-text-font-family), Cinzel serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+}
+.eael-data-table thead tr th {
+  color: var(--e-global-color-primary);
+  background-color: var(--e-global-color-secondary);
+}
+section.our_fleet {
+  padding: 0 0 100px;
+}
+.our_fleet .of_card h3 {
+  color: var(--e-global-color-secondary);
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  margin-bottom: 20px;
+}
+.of_card_container {
+  padding: 70px 0 100px;
+}
+.wac_left ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  font-weight: 500;
+}
+.wac_left ul li .fa-circle {
+  font-size: 6px;
+}
+
+.why_a_class.desert .wac_right p {
+  font-weight: 400;
+  padding: 20px 30px;
+}
 @media only screen and (max-width: 1920px) {
 }
 
@@ -1322,6 +1483,9 @@ footer {
   .accordion_container {
     padding: 50px 0 0;
   }
+  .our_fleet.desert {
+    padding-top: 100px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .footer_column {
@@ -1354,6 +1518,64 @@ footer {
   }
   .wac_right h2 {
     font-size: 30px;
+  }
+  .eael-data-table tbody tr td {
+    float: none;
+    clear: left;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .td-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .th-mobile-screen {
+    display: inline-block;
+    padding: 0 0.6em;
+    margin-right: 10px;
+    text-align: center;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+  }
+  .td-content {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .eael-data-table .td-content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .th-mobile-screen {
+    text-align: center;
+  }
+  .eael-data-table thead {
+    display: none;
+  }
+  .tablesorter.desert tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .why_a_class.desert .wac_right p {
+    padding: 0;
+  }
+  .of_card {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1411,6 +1633,13 @@ footer {
   }
   .wac_right li {
     font-size: 15px;
+  }
+  .data-table-header-text {
+    font-weight: 600;
+  }
+  .data-table-header-text,
+  .td-content {
+    font-size: 15px !important;
   }
 }
 @media only screen and (max-width: 399px) {
