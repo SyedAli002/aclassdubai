@@ -1441,6 +1441,96 @@ section.our_fleet {
   font-weight: 400;
   padding: 20px 30px;
 }
+
+.menu_desert_img img {
+  border-radius: 20px;
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 45px;
+}
+section.menu_desert {
+  padding: 150px 0;
+}
+.menu_desert_img {
+  padding-top: 80px;
+}
+.menu_desert_img .heading p {
+  color: var(--e-global-color-secondary);
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.gallary img {
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.gallary img:hover {
+  transform: scale(1.05);
+}
+section.gallary {
+  padding: 50px 0 100px;
+}
+.why_a_class.desert_uae .wac_left,
+.why_a_class.desert_uae .wac_right {
+  width: unset;
+}
+.why_a_class.desert_uae {
+  padding: 50px 0 100px;
+}
+.why_a_class.desert_uae .container-fluid {
+  max-width: 1550px;
+  display: flex;
+  justify-content: center;
+}
+.why_a_class .wac_left {
+  transition: 0.3s;
+}
+.wac_container2 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.why_a_class.desert_uae .wac_right.ul_ {
+  padding: 50px 30px;
+}
+.wac_left_overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  background: linear-gradient(#2c37406e, #2c37406e),
+    url(../images/Downloader.la-6666aac7b6b77-e1718004509862.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+}
+.wac_container2:hover .wac_left_overlay {
+  top: 0;
+}
+.wac_left_overlay h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  padding: 0;
+}
 @media only screen and (max-width: 1920px) {
 }
 
@@ -1485,6 +1575,9 @@ section.our_fleet {
   }
   .our_fleet.desert {
     padding-top: 100px;
+  }
+  .menu_desert_img img {
+    height: 450px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1577,6 +1670,9 @@ section.our_fleet {
   .of_card {
     text-align: center;
   }
+  .menu_desert_img img {
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .banner_content {
@@ -1641,6 +1737,32 @@ section.our_fleet {
   .td-content {
     font-size: 15px !important;
   }
+  .menu_desert_img .row {
+    flex-direction: column;
+  }
+  .menu_desert_img .col-6 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .title,
+  .title span {
+    font-size: 30px;
+  }
+  .menu_desert_img {
+    padding-top: 40px;
+  }
+  .menu_desert_img img {
+    margin-bottom: 25px;
+  }
+  section.menu_desert {
+    padding: 60px 0 0;
+  }
+  section.gallary {
+    padding: 50px 0 0px;
+  }
+  .banner-section2 h1 {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 399px) {
   .logo img {
@@ -1655,5 +1777,8 @@ section.our_fleet {
   }
   .lr2 {
     padding: 10px 0;
+  }
+  .lr_bottom {
+    margin-top: 10px;
   }
 }

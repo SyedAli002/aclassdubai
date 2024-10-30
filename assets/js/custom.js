@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
   // Initialize Slick Carousel for main slider
   //   $(".portfolio-slider-for").slick({
   //     slidesToShow: 1,
@@ -18,9 +20,22 @@ $(document).ready(function () {
   //     focusOnSelect: true,
   //   });
   // });
-  AOS.init({
-    once: true,
-  });
+  // $(document).ready(function () {
+  //   function updateGalleryClass() {
+  //     const $gallery = $("#gallary_slider"); // Use jQuery to select the gallery
+  //     if ($(window).width() <= 480) {
+  //       $gallery.addClass("active");
+  //     } else {
+  //       $gallery.removeClass("active");
+  //     }
+  //   }
+
+  //   // Check on load
+  //   updateGalleryClass();
+
+  //   // Check on resize
+  //   $(window).resize(updateGalleryClass);
+  // });
 
   // flawless-digital-slider start
   // $(document).ready(function () {
