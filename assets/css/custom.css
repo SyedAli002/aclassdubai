@@ -399,7 +399,7 @@ div#navbarSupportedContent {
   border-bottom: 1.5px solid #df560961;
 }
 
-header .navbar li.dropdown:hover .MegaMenu_menu {
+header .navbar li.dropdown:hover > .MegaMenu_menu {
   display: block !important;
   min-width: 190px;
   left: 0;
@@ -411,9 +411,28 @@ header .navbar li.dropdown:hover .MegaMenu_menu {
   border: none;
   z-index: 0;
 }
+header .navbar li.dropdown.inner_dropdown1st:hover > .MegaMenu_menu {
+  right: 100%;
+  top: -150px;
+  left: unset;
+}
+li.nav-item.dropdown.inner_dropdown1st a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li.nav-item.dropdown.inner_dropdown1st > .dropdown-menu ul {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 350px;
+}
+li.nav-item.dropdown.inner_dropdown1st a i {
+  font-size: 12px;
+} 
 .dm_inner {
   background: #fff;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.175);
 }
@@ -425,6 +444,7 @@ header .navbar li.dropdown .MegaMenu_menu {
 
 header .navbar li.dropdown .MegaMenu_menu li {
   display: block;
+  padding: 0 10px;
 }
 
 .dropdown-menu.MegaMenu_menu a i {
@@ -450,10 +470,10 @@ header .navbar li.dropdown .MegaMenu_menu a {
   gap: 10px;
   white-space: nowrap;
   font-weight: 500;
-  margin: 0 0 15px !important;
+  margin: 15px 0  !important;
 }
-header .navbar li.dropdown .MegaMenu_menu ul li:last-child a {
-  margin-bottom: 0 !important;
+header .navbar li.dropdown .MegaMenu_menu ul li:last-child > a {
+  /* margin-bottom: 0 !important; */
 }
 
 .social_menu_header p {
