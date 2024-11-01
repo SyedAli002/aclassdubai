@@ -1187,6 +1187,13 @@ footer {
   background-size: cover;
 }
 
+.banner-section2.airport_service {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/traffic_service_bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
 .banner-section2 {
   min-height: 400px;
   display: flex;
