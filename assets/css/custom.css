@@ -70,7 +70,6 @@ li {
 }
 
 @media (min-width: 1400px) {
-
   .container,
   .container-lg,
   .container-md,
@@ -404,7 +403,7 @@ div#navbarSupportedContent {
   border-bottom: 1.5px solid #df560961;
 }
 
-header .navbar li.dropdown:hover>.MegaMenu_menu {
+header .navbar li.dropdown:hover > .MegaMenu_menu {
   display: block !important;
   min-width: 190px;
   left: 0;
@@ -416,8 +415,12 @@ header .navbar li.dropdown:hover>.MegaMenu_menu {
   border: none;
   z-index: 0;
 }
+header .navbar li.dropdown.exclusive:hover > .MegaMenu_menu {
+  right: 0;
+  left: unset;
+}
 
-header .navbar li.dropdown.inner_dropdown1st:hover>.MegaMenu_menu {
+header .navbar li.dropdown.inner_dropdown1st:hover > .MegaMenu_menu {
   right: 100%;
   top: -150px;
   left: unset;
@@ -430,7 +433,7 @@ li.nav-item.dropdown.inner_dropdown1st a {
   align-items: center;
 }
 
-li.nav-item.dropdown.inner_dropdown1st>.dropdown-menu ul {
+li.nav-item.dropdown.inner_dropdown1st > .dropdown-menu ul {
   overflow: hidden;
   overflow-y: scroll;
   max-height: 350px;
@@ -485,7 +488,7 @@ header .navbar li.dropdown .MegaMenu_menu a {
   /* margin: 15px 0 !important; */
 }
 
-header .navbar li.dropdown .MegaMenu_menu ul li:last-child>a {
+header .navbar li.dropdown .MegaMenu_menu ul li:last-child > a {
   /* margin-bottom: 0 !important; */
 }
 
@@ -722,7 +725,7 @@ section.banner-section {
 }
 
 .little_about_section {
-  padding: 50px 0 100px;
+  padding: 100px 0;
 }
 
 .little_about_section h2,
@@ -771,8 +774,9 @@ section.banner-section {
   font-weight: var(--e-global-typography-text-font-weight);
 }
 
-.las_right>img {
-  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+.las_right > img {
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
@@ -782,7 +786,7 @@ section.banner-section {
   border: none;
 }
 
-.las_right2>img {
+.las_right2 > img {
   vertical-align: middle;
   display: inline-block;
   height: auto;
@@ -802,7 +806,7 @@ section.banner-section {
   margin: 12px 12px 12px 12px;
   padding: 35px 20px 20px 20px;
   position: relative;
-  width: 100%;
+  width: 30%;
   flex-wrap: wrap;
   border-radius: 15px 15px 15px 15px;
   display: flex;
@@ -811,7 +815,9 @@ section.banner-section {
   background-color: var(--e-global-color-accent);
   justify-content: center;
 }
-
+.lrb1.luxuary h2 {
+  font-size: 27px;
+}
 .lrb1 h2 {
   margin-bottom: 20px;
   color: var(--e-global-color-primary);
@@ -835,9 +841,10 @@ section.banner-section {
 
 .lr2 {
   padding: 10px;
+  width: 70%;
 }
 
-.lr2>img {
+.lr2 > img {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 50px -8px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
@@ -1193,6 +1200,12 @@ footer {
   background-position: center center;
   background-size: cover;
 }
+.banner-section2.limousine-transport {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/limousine-transport_bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
 
 .banner-section2 {
   min-height: 400px;
@@ -1234,7 +1247,8 @@ footer {
 }
 
 .mv_left img {
-  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
@@ -1259,7 +1273,15 @@ footer {
   margin-bottom: 20px;
 }
 
-.mission_vision.school_bus .mv_right ul li {
+.mv_right h3 {
+  color: var(--e-global-color-secondary);
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.mv_right ul li {
   list-style-type: disclosure-closed;
   margin-left: 18px !important;
 }
@@ -1316,10 +1338,26 @@ footer {
   position: relative;
   flex-wrap: wrap;
   align-content: flex-start;
-  height: 100%;
+  min-height: 400px;
   width: 52.29%;
 }
-
+.wac_right.party_group {
+  background: linear-gradient(#2c374096, #2c374096),
+    url(../images/party_img6.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.wac_right.party_group {
+  background: linear-gradient(#2c374096, #2c374096),
+    url(../images/party_img6.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.wac_left.party_group {
+  padding-bottom: 100px;
+}
 .wac_right.ul_ {
   padding: 50px 30px 90px;
 }
@@ -1509,7 +1547,7 @@ tbody tr td {
   font-weight: var(--e-global-typography-text-font-weight);
 }
 
-tbody>tr:nth-child(2n + 1) td {
+tbody > tr:nth-child(2n + 1) td {
   color: #000000;
 }
 
@@ -1581,7 +1619,8 @@ section.our_fleet {
 
 .menu_desert_img img {
   border-radius: 20px;
-  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
@@ -1606,7 +1645,8 @@ section.menu_desert {
 }
 
 .gallary img {
-  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
@@ -1675,6 +1715,20 @@ section.gallary {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.wac_left_overlay.limousine-transport {
+  background: linear-gradient(#2c37406e, #2c37406e),
+    url(../images/desert-safari_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wac_left_overlay.party_group {
+  background: linear-gradient(#2c37406e, #2c37406e),
+    url(../images/peace_party.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .wac_container2:hover .wac_left_overlay {
   top: 0;
@@ -1702,18 +1756,21 @@ section.gallary {
   color: #000;
 }
 
-@media only screen and (max-width: 1920px) {}
+@media only screen and (max-width: 1920px) {
+}
 
-@media only screen and (max-width: 1599px) {}
+@media only screen and (max-width: 1599px) {
+}
 
-@media only screen and (max-width: 1444px) {}
+@media only screen and (max-width: 1444px) {
+}
 
 @media only screen and (max-width: 1399px) {
   .banner_content {
     padding-right: 0;
   }
 
-  .lr2>img {
+  .lr2 > img {
     height: 100%;
     object-fit: cover;
   }
@@ -1730,6 +1787,9 @@ section.gallary {
 
   section.our_fleet {
     padding-bottom: 0;
+  }
+  .mission_vision .accordion_container {
+    padding: 0;
   }
 }
 
@@ -1774,7 +1834,7 @@ section.gallary {
   .navbar-collapse {
     position: absolute;
     top: 90px;
-    background: #FFF;
+    background: #fff;
     padding: 20px;
     border: 2px solid;
     border-radius: 10px;
@@ -1865,6 +1925,10 @@ header .navbar li.dropdown .MegaMenu_menu li a {
 
   .mv_left img {
     height: 400px;
+    object-fit: cover;
+  }
+  .mv_right {
+    padding-bottom: 40px;
   }
 
   .mission_vision.director {
@@ -1875,7 +1939,7 @@ header .navbar li.dropdown .MegaMenu_menu li a {
     flex-direction: column-reverse;
   }
 
-  .wac_container>div {
+  .wac_container > div {
     width: 100% !important;
   }
 
@@ -1966,6 +2030,12 @@ header .navbar li.dropdown .MegaMenu_menu li a {
   section.gallary {
     padding-bottom: 0;
   }
+  .mission_vision .accordion_container {
+    padding: 0px 0 40px;
+  }
+  .mission_vision {
+    padding: 50px 0;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1982,7 +2052,7 @@ header .navbar li.dropdown .MegaMenu_menu li a {
     justify-content: center;
   }
 
-  .lr2>img {
+  .lr2 > img {
     height: 200px;
     width: 780px;
     object-fit: cover;
@@ -2022,9 +2092,11 @@ header .navbar li.dropdown .MegaMenu_menu li a {
   }
 
   .mission_vision {
+    padding: 0 0 60px;
+  }
+  .little_about_section.about {
     padding-bottom: 40px;
   }
-
   .wac_left,
   .wac_right {
     padding-bottom: 50px;
@@ -2080,6 +2152,27 @@ header .navbar li.dropdown .MegaMenu_menu li a {
   .banner-section2 h1 {
     font-size: 35px;
   }
+  .lrb1 {
+    width: 40%;
+  }
+  .lr2 {
+    width: 60%;
+  }
+  .mv_left img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .little_about_section.desert {
+    padding-top: 50px;
+  }
+  .our_fleet.desert {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .why_a_class .wac_left p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -2094,9 +2187,11 @@ header .navbar li.dropdown .MegaMenu_menu li a {
   .lrb1 {
     flex-direction: column;
     margin: 0;
+    width: 100%;
   }
 
   .lr2 {
+    width: 100%;
     padding: 10px 0;
   }
 
