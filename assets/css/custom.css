@@ -1138,7 +1138,7 @@ footer {
     url(../images/desert-safari_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
 }
 

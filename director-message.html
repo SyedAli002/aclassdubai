@@ -52,6 +52,12 @@
     />
     <link href="./assets/css/custom.css" rel="stylesheet" type="text/css" />
     <style>
+        header .navbar ul li a.active {
+        font-weight: 900;
+      }
+      ul.navbar-nav li a.active:before {
+        width: 100%;
+      }
       header .navbar li.dropdown .MegaMenu_menu a.active {
         font-weight: 900;
       }
@@ -129,7 +135,7 @@
                 <a class="nav-link" href="index.html">home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="about.html">About US</a>
+                <a class="nav-link active" href="about.html">About US</a>
                 <div class="dropdown-menu MegaMenu_menu">
                   <div class="dm_inner">
                     <div class="row">
@@ -309,7 +315,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:;">Contact US</a>
+                <a class="nav-link" href="contact.html">Contact US</a>
               </li>
             </ul>
           </div>
