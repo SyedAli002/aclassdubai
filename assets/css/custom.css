@@ -1206,6 +1206,13 @@ footer {
   background-position: center center;
   background-size: cover;
 }
+.banner-section2.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/contact-us-form-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: unset;
+}
 
 .banner-section2 {
   min-height: 400px;
@@ -1770,8 +1777,8 @@ section.gallary {
 }
 .fc_row h3:last-child {
   min-width: unset;
-} 
-.fc_row h3 a{
+}
+.fc_row h3 a {
   color: var(--e-global-color-accent);
   font-family: "Plus Jakarta Sans", Cinzel serif;
   font-size: 18px;
@@ -1779,26 +1786,28 @@ section.gallary {
   line-height: 41px;
   text-decoration: underline;
 }
-.fc_row h3 span{
+.fc_row h3 span {
   color: var(--e-global-color-primary);
-    font-family: "Plus Jakarta Sans", Cinzel serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 41px;
-  }
-  .fc_row p{
-    color: var(--e-global-color-accent);
-    font-family: "Plus Jakarta Sans", Cinzel serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 25px;
-  }
-.form_content {
-  background-color:var(--e-global-color-secondary);
-  border-radius:15px;
-  padding: 50px;
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 41px;
 }
-.form_content h2, .form_content h4, .form_content .fc_row{
+.fc_row p {
+  color: var(--e-global-color-accent);
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.form_content {
+  background-color: var(--e-global-color-secondary);
+  border-radius: 15px;
+  padding: 60px 50px 100px;
+}
+.form_content h2,
+.form_content h4,
+.form_content .fc_row {
   margin-bottom: 20px;
 }
 .form_content .fc_row:last-child {
@@ -1807,36 +1816,66 @@ section.gallary {
 .contact_form_section {
   padding: 100px 0;
 }
-.contact_form h5{
+.contact_form {
+  padding: 0 30px;
+}
+.contact_form h5 {
   margin: 0 0 var(--wpforms-field-size-input-spacing) 0;
   padding: 0;
   font-size: var(--wpforms-label-size-font-size);
   line-height: var(--wpforms-label-size-line-height);
   color: var(--wpforms-label-color);
   display: block;
-    font-weight: 700;
-    font-style: normal;
-    word-break: break-word;
-    word-wrap: break-word;
+  font-weight: 700;
+  font-style: normal;
+  word-break: break-word;
+  word-wrap: break-word;
 }
-.contact_form h5 span{
+.contact_form h5 span {
   color: #d63637;
   font-weight: 600;
   word-break: break-word;
   hyphens: auto;
 }
-.contact_form input{
-  background-color: var(--wpforms-field-background-color);
-  border-radius: var(--wpforms-field-border-radius);
-  color: var(--wpforms-field-text-color);
-  border: 1px solid var(--wpforms-field-border-color);
-  padding: 0 var(--wpforms-field-size-padding-h);
-  font-size: var(--wpforms-field-size-font-size);
+.input_control {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.input_control input,
+.input_control textarea {
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0 14px;
+  font-size: 16px;
   line-height: 100%;
   box-shadow: none;
   transition: border 0.15s, box-shadow 0.15s;
+  width: 100%;
+}
+.input_control input {
+  height: 43px;
+}
+.input_control input::placeholder {
+  font-size: 15px;
+}
+.input_control label {
+  font-size: var(--wpforms-label-size-sublabel-font-size);
+  line-height: var(--wpforms-label-size-sublabel-line-height);
+  margin: var(--wpforms-field-size-sublabel-spacing) 0 0 0;
+  padding: 0;
+  color: var(--wpforms-label-sublabel-color);
+}
+.input_control .iti {
+  width: 100%;
 }
 
+.map_section iframe {
+  width: 100%;
+  height: 400px;
+}
 @media only screen and (max-width: 1920px) {
 }
 
@@ -1871,6 +1910,9 @@ section.gallary {
   }
   .mission_vision .accordion_container {
     padding: 0;
+  }
+  .fc_row h3 {
+    min-width: 40%;
   }
 }
 
@@ -1959,34 +2001,6 @@ section.gallary {
   }
 }
 
-/* li.nav-item.dropdown {
-  padding-right: 35px;
-}
-
-header ul li.dropdown a {
-  padding-left: 0px !important;
-}
-li.nav-item.dropdown {
-  padding-right: 40px;
-}
-header .navbar li.dropdown:hover > .MegaMenu_menu {
-  padding: 10px 0 0 0 !important;
-  margin-bottom: 0;
-}
-.dm_inner {
-  border: none;
-}
-header .navbar li.dropdown .MegaMenu_menu li {
-  padding: 0 10px;
-  margin: 15px 0 15px 10px;
-  width: 200px;
-
-}
-header .navbar li.dropdown .MegaMenu_menu li a {
-  white-space: unset;
-  text-wrap: wrap;
-}
-} */
 @media only screen and (max-width: 768px) {
   .footer_column {
     padding-right: 15px;
@@ -2255,6 +2269,30 @@ header .navbar li.dropdown .MegaMenu_menu li a {
     font-size: 14px;
     line-height: 20px;
   }
+  .contact_form_section {
+    padding: 50px 0;
+  }
+  .form_content {
+    padding: 40px 30px;
+  }
+  .fc_row {
+    flex-direction: column;
+    align-items: start;
+  }
+  .fc_row h3 {
+    min-width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .fc_row h3 a,
+  .fc_row h3 span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .fc_row p {
+    font-size: 15px;
+  }
+
 }
 
 @media only screen and (max-width: 399px) {

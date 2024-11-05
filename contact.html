@@ -50,6 +50,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
     <link href="./assets/css/custom.css" rel="stylesheet" type="text/css" />
     <style>
       header .navbar ul li a.active {
@@ -200,35 +204,35 @@
                                         >
                                       </li>
                                       <li>
-                                        <a href="javascript:;">
+                                        <a href="thirty-seater-bus-hire.html">
                                           Thirty Seater Bus Hire</a
                                         >
                                       </li>
                                       <li>
-                                        <a href="javascript:;">
+                                        <a href="fifty-seater-bus-hire.html">
                                           Fifty Seater Bus Hire</a
                                         >
                                       </li>
                                       <li>
-                                        <a href="javascript:;">
+                                        <a href="fifteen-seater-bus-hire.html">
                                           Fifteen Seater Bus Hire</a
                                         >
                                       </li>
                                       <li>
-                                        <a href="javascript:;">
+                                        <a href="city_tour_bus_services.html">
                                           City Tour Bus services</a
                                         >
                                       </li>
                                       <li>
-                                        <a href="javascript:;">
+                                        <a href="labour_bus_service.html">
                                           Labour Bus Service</a
                                         >
                                       </li>
                                       <li>
-                                        <a href="javascript:;"> Tour Buses</a>
+                                        <a href="tour_buses.html">Tour Buses</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:;">
+                                        <a href="shuttle_bus_services.html">
                                           Shuttle Bus Services</a
                                         >
                                       </li>
@@ -318,7 +322,7 @@
     </header>
 
     <div class="main">
-      <section class="banner-section2 about">
+      <section class="banner-section2 about contact">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -331,11 +335,11 @@
       </section>
       <section class="contact_form_section">
         <div class="container">
-          <div class="row">
-            <div class="col-6">
+          <div class="row align-items-center justify-content-center gap-lg-0 gap-5">
+            <div class="col-12 col-md-10 col-lg-6">
               <div class="form_content">
                 <h4 class="heading-title">Contact Brief</h4>
-                <h2 class="heading-title2 text-white">Quick Links</h2>
+                <h2 class="heading-title2 text-white mb-5">Quick Links</h2>
                 <div class="fc_row">
                   <h3>Phone 1:</h3>
                   <h3><a href="tel:+971 4 3396718">+971 4 3396718</a></h3>
@@ -369,16 +373,47 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-10 col-lg-6">
               <div class="contact_form">
-                <h4 class="heading-title">Feel free to contact us</h4>
+                <h4 class="heading-title mb-3">Feel free to contact us</h4>
                 <h2 class="heading-title2">Contact Form</h2>
                 <form action="#!">
-                  <div class="row">
-                    <div class="col-6">
-                      <h5>Name <span>*</span></h5>
+                  <div class="row align-items-end">
+                    <div class="col-sm-6">
                       <div class="input_control">
-
+                        <div>
+                          <h5>Name <span>*</span></h5>
+                          <input type="text" />
+                        </div>
+                        <label for="firstname">First</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="input_control">
+                        <div>
+                          <input type="text" />
+                        </div>
+                        <label for="firstname">Last</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input_control">
+                        <h5>Phone <span>*</span></h5>
+                        <div class="input-group input-group-sm">
+                          <input id="phone" type="tel" name="phone" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input_control">
+                        <h5>Email <span>*</span></h5>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input_control">
+                        <h5>Comment or Message</h5>
+                        <textarea class="form-control" rows="7"></textarea>
                       </div>
                     </div>
                   </div>
@@ -388,22 +423,16 @@
           </div>
         </div>
       </section>
-
-      <!-- <section class="any_question">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-9 col-lg-7">
-              <div class="aq_inner">
-                <h2>DO YOU STILL HAVE</h2>
-                <p>ANY QUESTION REGARING OUR SERVICES?</p>
-                <div class="pt-4 pt-sm-5">
-                  <a href="javascript:;" class="btn1">Contact us</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section class="map_section">
+        <div class="container-fluid p-0">
+          <iframe
+            loading="lazy"
+            src="https://maps.google.com/maps?q=Conrad%20Dubai&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+            title="Conrad Dubai"
+            aria-label="Conrad Dubai"
+          ></iframe>
         </div>
-      </section> -->
+      </section>
     </div>
 
     <footer>
@@ -465,16 +494,26 @@
           </div>
         </div>
       </div>
+      <script src="assets/js/jquery-3.6.3.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+      <script src="assets/js/aos.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/fancybox.min.js"></script>
+      <script src="assets/js/jquery-ui.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="assets/js/slick.js"></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+      <script src="assets/js/custom.js"></script>
+
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
     </footer>
-    <script src="./assets/js/jquery-3.6.3.min.js"></script>
-    <!-- <script src="./assets/js/wow.min.js"></script> -->
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/fancybox.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="./assets/js/slick.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
   </body>
 </html>
