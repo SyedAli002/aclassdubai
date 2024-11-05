@@ -1804,8 +1804,37 @@ section.gallary {
 .form_content .fc_row:last-child {
   margin: 0;
 }
-.contact_form {
+.contact_form_section {
   padding: 100px 0;
+}
+.contact_form h5{
+  margin: 0 0 var(--wpforms-field-size-input-spacing) 0;
+  padding: 0;
+  font-size: var(--wpforms-label-size-font-size);
+  line-height: var(--wpforms-label-size-line-height);
+  color: var(--wpforms-label-color);
+  display: block;
+    font-weight: 700;
+    font-style: normal;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+.contact_form h5 span{
+  color: #d63637;
+  font-weight: 600;
+  word-break: break-word;
+  hyphens: auto;
+}
+.contact_form input{
+  background-color: var(--wpforms-field-background-color);
+  border-radius: var(--wpforms-field-border-radius);
+  color: var(--wpforms-field-text-color);
+  border: 1px solid var(--wpforms-field-border-color);
+  padding: 0 var(--wpforms-field-size-padding-h);
+  font-size: var(--wpforms-field-size-font-size);
+  line-height: 100%;
+  box-shadow: none;
+  transition: border 0.15s, box-shadow 0.15s;
 }
 
 @media only screen and (max-width: 1920px) {
