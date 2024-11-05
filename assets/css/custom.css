@@ -1755,6 +1755,58 @@ section.gallary {
 .accordion_container .accordion-button:after {
   color: #000;
 }
+.fc_row {
+  display: flex;
+  align-items: center;
+}
+
+.fc_row h3 {
+  color: var(--e-global-color-accent);
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 41px;
+  min-width: 35%;
+}
+.fc_row h3:last-child {
+  min-width: unset;
+} 
+.fc_row h3 a{
+  color: var(--e-global-color-accent);
+  font-family: "Plus Jakarta Sans", Cinzel serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 41px;
+  text-decoration: underline;
+}
+.fc_row h3 span{
+  color: var(--e-global-color-primary);
+    font-family: "Plus Jakarta Sans", Cinzel serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 41px;
+  }
+  .fc_row p{
+    color: var(--e-global-color-accent);
+    font-family: "Plus Jakarta Sans", Cinzel serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+.form_content {
+  background-color:var(--e-global-color-secondary);
+  border-radius:15px;
+  padding: 50px;
+}
+.form_content h2, .form_content h4, .form_content .fc_row{
+  margin-bottom: 20px;
+}
+.form_content .fc_row:last-child {
+  margin: 0;
+}
+.contact_form {
+  padding: 100px 0;
+}
 
 @media only screen and (max-width: 1920px) {
 }
