@@ -414,18 +414,29 @@ header .navbar li.dropdown:hover > .MegaMenu_menu {
   background-color: transparent;
   border: none;
   z-index: 0;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+header .navbar li.dropdown.exclusive .MegaMenu_menu{
+  right: 0;
+  left: unset;
 }
 header .navbar li.dropdown.exclusive:hover > .MegaMenu_menu {
   right: 0;
   left: unset;
 }
 
-header .navbar li.dropdown.inner_dropdown1st:hover > .MegaMenu_menu {
+header .navbar li.dropdown.inner_dropdown1st .MegaMenu_menu {
   right: 100%;
-  top: -150px;
+  top: -25px;
   left: unset;
 }
-
+header .navbar li.dropdown.inner_dropdown1st:hover > .MegaMenu_menu {
+  right: 100%;
+  top: -25px;
+  left: unset;
+}
 li.nav-item.dropdown.inner_dropdown1st a {
   position: relative;
   display: flex;
@@ -435,7 +446,7 @@ li.nav-item.dropdown.inner_dropdown1st a {
 
 li.nav-item.dropdown.inner_dropdown1st > .dropdown-menu ul {
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 350px;
 }
 
@@ -453,7 +464,11 @@ li.nav-item.dropdown.inner_dropdown1st a i {
 header .navbar li.dropdown .MegaMenu_menu {
   float: left;
   margin: 0 0 10px 0;
-  transition: 0.5s;
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 header .navbar li.dropdown .MegaMenu_menu li {
@@ -487,7 +502,19 @@ header .navbar li.dropdown .MegaMenu_menu a {
   font-weight: 500;
   /* margin: 15px 0 !important; */
 }
-
+@keyframes showDropdown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  83.33% { /* Keeps opacity 1 for 5s */
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
 .social_menu_header p {
   color: #333333;
 }
@@ -1159,7 +1186,7 @@ footer {
     url(../images/bus_rental_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -1209,12 +1236,33 @@ footer {
   background-position: center center;
   background-size: cover;
 }
+.banner-section2.shuttle_bus {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/shuttle_bg.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner-section2.car_lift_dubai {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/car_lift_dubai_bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .banner-section2.contact {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/contact-us-form-banner.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: unset;
+}
+.banner-section2.city_tour {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/city_tour_bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .banner-section2 {
@@ -1443,6 +1491,7 @@ footer {
 
 .accordion_container .accordion-button span {
   text-decoration: underline;
+  text-transform: capitalize;
 }
 
 .accordion_container .accordion-button:after {
