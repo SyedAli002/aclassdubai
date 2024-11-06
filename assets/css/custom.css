@@ -488,10 +488,6 @@ header .navbar li.dropdown .MegaMenu_menu a {
   /* margin: 15px 0 !important; */
 }
 
-header .navbar li.dropdown .MegaMenu_menu ul li:last-child > a {
-  /* margin-bottom: 0 !important; */
-}
-
 .social_menu_header p {
   color: #333333;
 }
@@ -766,6 +762,13 @@ section.banner-section {
   font-size: 40px;
   font-weight: 700;
   line-height: 41px;
+}
+.heading-title3 {
+  color: var(--e-global-color-secondary) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3em !important;
+  font-family: "Plus Jakarta Sans", Cinzel serif !important;
 }
 
 .para {
@@ -2292,7 +2295,6 @@ section.gallary {
   .fc_row p {
     font-size: 15px;
   }
-
 }
 
 @media only screen and (max-width: 399px) {
